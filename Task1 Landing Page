@@ -1,0 +1,115 @@
+# HTML CODE
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Landing Page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="leftContainer section">
+            <div class="subSection">
+                <h1>Internship 2024</h1>
+                <p>The Landing Page for the Internship Program of Level 1-Task 1</p>
+                <div class="btngroup">
+                    <button><a target="_Nisarg" href="https://www.github.com/Nisarg1902">Visit Github</a></button>
+                    <button><a target="_Nisarg" href="https://www.linkedin.com/in/nisarggate?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ">Visit LinkedIn</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="rightContainer section">
+        </div>
+    </div>
+   
+</body>
+</html>
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#CSS CODE
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr; */
+  height:100%;
+  overflow-x: auto;
+}
+.section{
+  background-color: rgba(0, 0, 0, 0.960);
+  color: white;
+  height: 100vh;
+}
+
+
+/* ============================================
+
+Right Part Design
+
+===============================================*/
+
+.rightContainer{
+  background: url(202424.jpg) center/cover no-repeat;
+  justify-content: right;
+}
+
+/* ============================================
+
+Left Part Design
+
+===============================================*/
+
+.leftContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subSection{
+  box-shadow: 1px 1px 10px rgb(184, 131, 131);
+  box-shadow: 1px 1px 10px coral;
+  width: 80%;
+  height: 50%;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.leftContainer .subSection p{
+  font-size: 1.5rem;
+  text-decoration: underline;
+  color: rgb(255, 127, 80);
+}
+.leftContainer .subSection h1{
+  font-family: Georgia;
+  margin-bottom: 1rem;
+  /* color: ; */
+  font-size: 3rem;
+  /* text-decoration: underline double grey; */
+}
+button{
+  padding: .5rem 3rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: transparent;
+  box-shadow: -1px 1px 5px rgb(255, 255, 255);
+}
+button a{
+  color: rgb(255, 255, 255);
+}
+.btngroup{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
